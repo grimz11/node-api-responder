@@ -2,12 +2,13 @@
   "name": "node-api-responder",
   "version": "1.0.0",
   "description": "The node-api-responder package is a backend library for Node.js that provides a standardized way of returning responses from APIs. It allows developers to easily create consistent response objects that include a status code, message, and optional data, as well as support for pagination and links.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "npm run test",
     "build": "npx tsc"
   },
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/node": "^18.16.3",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
@@ -108,5 +109,8 @@
     "restful-api-response-node-js",
     "rest-api-responses-node-js",
     "restful-api-responses"
-  ]
+  ],
+  "dependencies": {
+    "fastify": "^4.17.0"
+  }
 }
